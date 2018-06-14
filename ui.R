@@ -35,7 +35,7 @@ shinyUI(fluidPage(
      tags$footer("Shiny app developed by: "),
      tags$footer(p(a("Jackie Hatala Matthes", href="http://matthesecolab.com", target="_blank"),
                  ", Assistant Professor of Biological Sciences, Wellesley College (2018) "),
-                 p("App source code available on ",a("GitHub",href = "https://github.com/jhmatthes/mammal-traits")),
+                 p("App source code available on ",a("GitHub",href = "https://github.com/jhmatthes/oak-phenology-app")),
                  p(" "),
                  tags$img(alt="Creative Commons License", style="border-width:0", src="https://i.creativecommons.org/l/by/4.0/88x31.png"),
                  tags$body("This work is licensed under a", a("Creative Commons Attribution 4.0 International License", href="http://creativecommons.org/licenses/by/4.0/"),".")))
