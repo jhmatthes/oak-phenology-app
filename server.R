@@ -1,6 +1,5 @@
 library(shiny)
 library(tidyverse)
-library(ggplot2)
 
 shinyServer(
   function(input, output){
@@ -28,7 +27,7 @@ shinyServer(
       inStat_T$percent<- ((inStat_T$n.y)/inStat_T$n.x)*100
       
       phenoPlot_P <- ggplot(filter(inStat_T, date > "2016-01-01")) +
-        geom_jitter(aes(x = date, y = percent, color = siteID)) + 
+        geom_point(aes(x = date, y = percent, color = siteID), position=position_jitter(height=1.0)) + 
         ggtitle(paste("Proportion with",input$phenphase)) +
         xlab("Date") + ylab("% of Individuals") +
         theme(plot.title = element_text(lineheight=.8, face="bold", size = 20)) +
